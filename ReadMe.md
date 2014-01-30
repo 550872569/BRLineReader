@@ -1,4 +1,4 @@
-`BRLineReader` is a class for iOS and OS X that reads text data line by line.
+BRLineReader is a class for iOS and OS X that reads text data line by line.
 
 Data can be read from file or from a supplied `NSData` object. If reading from file it will be represented by a memory-mapped data object.
 
@@ -6,7 +6,7 @@ All ASCII based text encodings and variable length encodings like UTF-8 are supp
 
 ## Installation
 
-Add the BRLineReader.[h|m] files to your project and #import the header file.
+Add the `BRLineReader.[hm]` files to your project and #import the header file.
 
 ## Usage
 
@@ -18,6 +18,12 @@ while ((line = [lineReader readTrimmedLine])) {
     // Do things with line...
 }
 ```
+
+## Notes
+
+The demo app has not been implemented yet, but it can be used to run the unit tests.
+
+If this `NSData` based solution is not to your liking the same functionality can be implemented with `NSInputStream` or `NSFileHandle`.
 
 ## License
 
