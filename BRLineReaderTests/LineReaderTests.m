@@ -60,4 +60,18 @@
     }
 }
 
+- (void)testStringInit
+{
+    NSString *lines = @"Line01\nLine02\nLine03";
+    NSArray *lineComponents = [lines componentsSeparatedByString:@"\n"];
+    BRLineReader *lineReader = [[BRLineReader alloc] initWithString:lines];
+    NSMutableArray *linesFromData = [NSMutableArray array];
+    NSString *line = nil;
+    while ((line = [lineReader readTrimmedLine])) {
+        [linesFromData addObject:line];
+    }
+    XCTAssert(lineReader.linesRead == [lineComponents count], @"%@: Wrong read line count.", @"String init");
+    XCTAssertEqualObjects(lineComponents, linesFromData, @"%@: Lines from data are not same as reference.", @"String init");
+}
+
 @end

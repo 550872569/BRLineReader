@@ -74,6 +74,13 @@
 - (instancetype)initWithData:(NSData *)data encoding:(NSStringEncoding)encoding;
 
 /**
+ Init reader with string object using UTF-8 string encoding.
+
+ @param string String object.
+ */
+- (instancetype)initWithString:(NSString *)string;
+
+/**
  @return Next line, or nil if there are no more lines.
  */
 - (NSString *)readLine;

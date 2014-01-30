@@ -51,6 +51,17 @@
     return self;
 }
 
+- (instancetype)initWithString:(NSString *)string
+{
+    self = [super init];
+    if (self) {
+        NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+        [self commonInitWithData:data encoding:NSUTF8StringEncoding];
+    }
+
+    return self;
+}
+
 - (void)commonInitWithData:(NSData *)data encoding:(NSStringEncoding)encoding
 {
     _data = data;
