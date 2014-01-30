@@ -17,7 +17,9 @@
 		8EA3E6481892BFCF0070A612 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA3E6471892BFCF0070A612 /* XCTest.framework */; };
 		8EA3E6491892BFCF0070A612 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA3E6281892BFCF0070A612 /* Cocoa.framework */; };
 		8EA3E6511892BFCF0070A612 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EA3E64F1892BFCF0070A612 /* InfoPlist.strings */; };
-		8EA3E6531892BFCF0070A612 /* BRLineReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3E6521892BFCF0070A612 /* BRLineReaderTests.m */; };
+		8EA3E6531892BFCF0070A612 /* LineReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3E6521892BFCF0070A612 /* LineReaderTests.m */; };
+		8EA3E65E1892C16E0070A612 /* BRLineReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3E65D1892C16E0070A612 /* BRLineReader.m */; };
+		8EA3E65F1892C16E0070A612 /* BRLineReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3E65D1892C16E0070A612 /* BRLineReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,9 @@
 		8EA3E6471892BFCF0070A612 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EA3E64E1892BFCF0070A612 /* BRLineReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRLineReaderTests-Info.plist"; sourceTree = "<group>"; };
 		8EA3E6501892BFCF0070A612 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8EA3E6521892BFCF0070A612 /* BRLineReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRLineReaderTests.m; sourceTree = "<group>"; };
+		8EA3E6521892BFCF0070A612 /* LineReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineReaderTests.m; sourceTree = "<group>"; };
+		8EA3E65C1892C16E0070A612 /* BRLineReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLineReader.h; sourceTree = "<group>"; };
+		8EA3E65D1892C16E0070A612 /* BRLineReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLineReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +121,10 @@
 			children = (
 				8EA3E63A1892BFCF0070A612 /* BRAppDelegate.h */,
 				8EA3E63B1892BFCF0070A612 /* BRAppDelegate.m */,
-				8EA3E63D1892BFCF0070A612 /* MainMenu.xib */,
+				8EA3E65C1892C16E0070A612 /* BRLineReader.h */,
+				8EA3E65D1892C16E0070A612 /* BRLineReader.m */,
 				8EA3E6401892BFCF0070A612 /* Images.xcassets */,
+				8EA3E63D1892BFCF0070A612 /* MainMenu.xib */,
 				8EA3E62F1892BFCF0070A612 /* Supporting Files */,
 			);
 			path = BRLineReader;
@@ -139,7 +145,7 @@
 		8EA3E64C1892BFCF0070A612 /* BRLineReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EA3E6521892BFCF0070A612 /* BRLineReaderTests.m */,
+				8EA3E6521892BFCF0070A612 /* LineReaderTests.m */,
 				8EA3E64D1892BFCF0070A612 /* Supporting Files */,
 			);
 			path = BRLineReaderTests;
@@ -254,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA3E63C1892BFCF0070A612 /* BRAppDelegate.m in Sources */,
+				8EA3E65E1892C16E0070A612 /* BRLineReader.m in Sources */,
 				8EA3E6351892BFCF0070A612 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA3E6531892BFCF0070A612 /* BRLineReaderTests.m in Sources */,
+				8EA3E65F1892C16E0070A612 /* BRLineReader.m in Sources */,
+				8EA3E6531892BFCF0070A612 /* LineReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
