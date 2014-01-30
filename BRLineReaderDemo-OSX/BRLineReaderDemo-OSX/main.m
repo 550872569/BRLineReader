@@ -1,8 +1,8 @@
 //
 //  main.m
-//  BRLineReader
+//  BRLineReaderDemo-OSX
 //
-//  Created by Bjørn Olav Ruud on 24.01.14.
+//  Created by Bjørn Olav Ruud on 30.01.14.
 //  Copyright (c) 2014 Bjørn Olav Ruud. All rights reserved.
 //
 

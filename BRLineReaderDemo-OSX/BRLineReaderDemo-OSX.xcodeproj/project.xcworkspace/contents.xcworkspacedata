@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BRLineReader.xcodeproj">
+      location = "self:BRLineReaderDemo-OSX.xcodeproj">
    </FileRef>
 </Workspace>
